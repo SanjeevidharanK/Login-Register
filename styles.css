@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    /* background: linear-gradient(grey,rgb(142, 108, 108),tan); */
+    background-image: url(backiee-194639-landscape.jpg);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+    /* overflow: hidden; */
+}
+    /* overflow: hidden; */
+
+header{
+    display: flex;
+    width: 100%;
+    color: aliceblue;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(to right, yellowgreen,cyan); */
+}
+nav{
+    position: relative;
+    left: 20px;
+}
+.nav-items{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 10px;
+    
+}
+a{
+    padding: 15px;
+    position: relative;
+    text-decoration: none;
+    color: rgb(5, 152, 152);
+}
+.nav-items a::after{
+    content: "";
+    position:absolute;
+    width: 80%;
+    left: 0;
+    transform-origin: right;
+    height: 3px;
+    bottom: 8px;
+    transform: scaleX(0);
+    
+    border-radius: 5px;
+    /* left: 300px; */
+    /* right: 50px; */
+    background: rgb(248, 247, 247);
+    transition: transform .5s;
+}
+.nav-items a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.nav-items button{
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border: 1px solid bisque;
+    border-radius: 5px;
+    color: gold;
+}
+.nav-items button:hover{
+    background-color: cadetblue;
+    color: brown;
+    cursor: pointer;
+    border: 1px solid bisque;
+    border-radius: 5px;
+}
+.container{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* backdrop-filter: blur(10px); */
+    background: transparent;
+    overflow: hidden;
+}
+.in{
+    /* position: absolute; */
+    padding: 14px;
+    width: 30%;
+    height: 45%;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border: 5px ;
+    /* background-color: yellowgreen; */
+    overflow: hidden;
+}
+.in input:focus~label{
+    top: -15px;
+}
+button{
+    /* border: none; */
+    border: 1px solid white;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgb(100, 142, 15);
+    
+}
+.off:hover{
+    cursor: grab;
+}
+.on:hover{
+    cursor: grab;
+}
+.off:active #no1::after{
+    position: relative;
+}
+.off:active #no2::after{
+    position: absolute;
+}
+.on:active #no2::after{
+    position: relative;
+}
+.on:active #no1::after{
+    position: absolute
+}
