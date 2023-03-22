@@ -11,7 +11,7 @@ const regis = document.getElementById('regi-btn')
 
 
 log_btn.onclick = function(){
-    Login.style.display="block";
+    Login.style.display="none";
     register.style.display="block"
     Login.style.position = "absolute";
     Login.style.zIndex = "-1";
@@ -21,7 +21,7 @@ log_btn.onclick = function(){
 }
 reg_btn.onclick = function(){
     Login.style.display="block";
-    register.style.display="block";
+    register.style.display="none";
     register.style.position = "absolute";
     register.style.zIndex = "-1";
     Login.style.transition="transform .5s ease";
@@ -31,7 +31,7 @@ reg_btn.onclick = function(){
 }
 regis.onclick = function(){
     Login.style.display="block";
-    register.style.display="block"
+    register.style.display="none"
     register.style.position = "absolute";
     register.style.zIndex = "-1";
 
